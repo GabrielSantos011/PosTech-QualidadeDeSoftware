@@ -1,7 +1,6 @@
 package com.fiap.projeto.service;
 
 import com.fiap.projeto.model.Mensagem;
-import com.fiap.projeto.reporitory.MensagemReporitory;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -19,9 +18,6 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 @AutoConfigureTestDatabase
 @Transactional
 public class MensagemServiceIT {
-
-    @Autowired
-    private MensagemReporitory mensagemReporitory;
 
     @Autowired
     private MensagemService mensagemService;
